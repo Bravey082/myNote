@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>我的文档</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    .mask {
+      background-color: rgba(231 231 231, 0.8) !important;
+      /* 设置半透明背景 */
+      opacity: 0.6 !important;
+      /* 透明度设置为 50% */
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">中文</a>
+  </nav>
+  <div id="app">🏃💨💨💨 Loading...</div>
+  <script>
+    window.$docsify = {
+      coverpage: true,
+      loadNavbar: true,
+      name: 'My Docs',
+      repo: '', //仓库地址
+      loadSidebar: true,  // 启用侧边栏
+      subMaxLevel: 2,
+      themeColor: '#25798A'
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+
+</html>
