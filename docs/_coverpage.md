@@ -1,15 +1,15 @@
-![logo](/img/panda.png)
+![logo](/img/bobo.gif)
 
-# docsify <small>3.5</small>
+# 我的博客 <small>分享我的生活、工作与成长</small>
 
-> 一个神奇的文档网站生成器。
+> 这是我的个人博客，记录工作中的心得体会、生活中的点滴故事，以及旅行中遇到的精彩瞬间。
 
-- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+- 内容涉及生活、工作、技术分享与旅行探险
+- 设计简洁，便于快速查看与阅读
+- 无需生成静态 HTML，实时更新和维护
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[GitHub](https://github.com/你的GitHub链接)
+[Get Started](./README.md)
 
 <!-- background image -->
-![](/img/bg.png)
+![](/img/bg.jpg)
