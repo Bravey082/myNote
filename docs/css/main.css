@@ -1,14 +1,29 @@
-.current-time-with-icon {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #4c6e6186;  /* 红色字体 */
-    background-color: rgba(0, 0, 0, 0.0.2);  /* 半透明黑色背景 */
-    padding: 8px 12px;
-    border-radius: 5px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(80, 78, 78, 0.1);
-}
+.mask {
+    background-color: rgba(231 231 231, 0.8) !important;
+    /* 设置半透明背景 */
+    opacity: 0.6 !important;
+    /* 透明度设置为 50% */
+  }
+
+  /* 极简风格的滚动条 */
+  ::-webkit-scrollbar {
+    width: 4px;
+    /* 调整滚动条的宽度 */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* 轨道透明 */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* 滑块颜色 */
+    border-radius: 4px;
+    /* 圆角 */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 悬停时的滑块颜色 */
+  }

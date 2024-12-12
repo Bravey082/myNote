@@ -147,5 +147,3 @@ nginx -s stop
 ```bash
 nginx -s reload
 ```
-
-希望这个整理后的 Markdown 格式命令集能帮助你更方便地管理和使用你的系统资源！

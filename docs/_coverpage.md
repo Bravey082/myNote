@@ -8,7 +8,7 @@
 - 设计简洁，便于快速查看与阅读
 - 无需生成静态 HTML，实时更新和维护
 
-[GitHub](https://github.com/你的GitHub链接)
+[Blog](https://bravey.us.kg)
 [Get Started](./README.md)
 
 <!-- background image -->

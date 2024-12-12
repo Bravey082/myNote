@@ -10,48 +10,11 @@
   <meta name="robots" content="index, follow">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/LIGMATV/docsify-theme-github/github.css">
   <link rel="stylesheet" href="/css/main.css">
-
-  <style>
-    .mask {
-      background-color: rgba(231 231 231, 0.8) !important;
-      /* 设置半透明背景 */
-      opacity: 0.6 !important;
-      /* 透明度设置为 50% */
-    }
-
-    /* 极简风格的滚动条 */
-    ::-webkit-scrollbar {
-      width: 4px;
-      /* 调整滚动条的宽度 */
-    }
-
-    ::-webkit-scrollbar-track {
-      background-color: transparent;
-      /* 轨道透明 */
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: rgba(0, 0, 0, 0.3);
-      /* 滑块颜色 */
-      border-radius: 4px;
-      /* 圆角 */
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background-color: rgba(0, 0, 0, 0.5);
-      /* 悬停时的滑块颜色 */
-    }
-  </style>
 </head>
 
 <body>
-  <!-- <nav>
-    <a href="#/">EN</a>
-    <a href="#/zh-cn/">中文</a>
-  </nav> -->
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -59,8 +22,9 @@
       loadNavbar: true,
       name: 'My Docs',
       repo: '', //仓库地址
+      subMaxLevel: 3,
       loadSidebar: true,  // 启用侧边栏
-      subMaxLevel: 2,
+      sidebar: 'auto', // 默认会自动生成侧边栏内容
       themeColor: '#25798A'
     }
   </script>
