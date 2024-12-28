@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>晓阳的博客</title>
+  <title>我的博客，分享技术、生活、学习等方面的心得与经验。</title>
   <link rel="icon" href="/img/long.png" sizes="32x32">
   <meta name="description" content="晓阳的博客，分享技术、生活、学习等方面的心得与经验。">
   <meta name="author" content="晓阳">
@@ -11,6 +11,7 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/LIGMATV/docsify-theme-github/github.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -25,7 +26,32 @@
       subMaxLevel: 3,
       loadSidebar: true,  // 启用侧边栏
       sidebar: 'auto', // 默认会自动生成侧边栏内容
-      themeColor: '#25798A'
+      themeColor: '#25798A',
+      executeScript: true,
+      plugins: [
+        function(hook) {
+          hook.ready(function() {
+            fetch('https://international.v1.hitokoto.cn/')
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('hitokoto_text').innerHTML = data.hitokoto;
+                // 组装来源和作者信息
+                let info = '';
+                if (data.from) {
+                  info += `《${data.from}》`;
+                }
+                if (data.from_who) {
+                  info += ` - ${data.from_who}`;
+                }
+                document.getElementById('hitokoto_info').innerHTML = info;
+              })
+              .catch(error => {
+                console.error('获取一言失败：', error);
+                document.getElementById('hitokoto_text').innerHTML = '一言加载失败 :(';
+              });
+          });
+        }
+      ]
     }
   </script>
   <!-- Docsify v4 -->

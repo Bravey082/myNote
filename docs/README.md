@@ -1,149 +1,26 @@
-# Docker 和 系统管理 命令
+# 生命的思考
 
-## Docker 命令
+> 人生如同一本书，有些章节平淡如水，有些跌宕起伏。重要的不是内容的长短，而是我们如何诠释每一页的意义。
 
-### 拉取 Redis 镜像
-```bash
-docker pull redis
-```
+![思考](https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80 ':size=80%')
 
-### 运行 Redis 容器
-```bash
-docker run -p 6379:6379 --name redis -v /data/redis/redis.conf:/etc/redis/redis.conf -d redis redis-server /etc/redis/redis.conf
-```
+## 生活的智慧
 
-### 检查 Redis 是否运行
-```bash
-netstat -tulnp | grep 6379
-```
+每个人都在寻找属于自己的答案。有时我们在繁华中迷失，有时在宁静中觉醒。生活的真谛不在于我们拥有什么，而在于我们如何看待所拥有的一切。
 
-### 清理 Docker 资源
+就像春天的细雨滋润万物，我们的心灵也需要常常沐浴在智慧的光芒之中。让我们：
 
-- **清理所有未使用的卷**
-  ```bash
-  docker volume prune
-  ```
+- 学会在挫折中成长
+- 在平凡中发现美好
+- 在付出中收获快乐
+- 在分享中体会幸福
 
-- **清理所有未使用的网络和自定义网络**
-  ```bash
-  docker network prune
-  ```
+## 心灵的对话
 
-- **清理所有未使用的镜像、容器、卷和网络（谨慎使用）**
-  ```bash
-  docker system prune
-  ```
+当繁星点缀夜空，当晨曦唤醒大地，我们是否常常驻足思考：生命的意义是什么？也许答案就藏在每一个平凡的日子里，在一杯清茶的袅袅升温中，在一次真诚的微笑里，在一场说走就走的旅行中。
 
-### 查看所有容器（包括已停止的）
-```bash
-docker ps -a
-```
+> 生活不在远方，而在脚下；
+> 幸福不在明天，而在当下；
+> 完美不在彼岸，而在心中。
 
-## 文件管理
-
-### 压缩和解压缩文件
-
-- **压缩文件夹**
-  ```bash
-  zip -r fileName.zip 文件夹名
-  ```
-
-- **强制解压文件**
-  ```bash
-  unzip -o dist.zip
-  ```
-
-- **压缩当前目录下所有文件**
-  ```bash
-  zip archive.zip *
-  ```
-
-- **解压文件**
-  ```bash
-  unzip archive.zip
-  ```
-
-### 删除文件或文件夹
-
-- **删除文件**
-  ```bash
-  rm -f dist*
-  ```
-
-- **递归删除文件夹**
-  ```bash
-  rm -rf directory
-  ```
-
-## 网络和进程管理
-
-### 检查端口占用
-
-- **在 Linux 上检查端口 8080**
-  ```bash
-  netstat -ano | grep "8080"
-  ```
-
-- **在 Windows 上杀死进程**
-  ```bash
-  taskkill /pid 8080 -f
-  ```
-
-### 进入 Docker 容器
-```bash
-docker exec -it jenkins /bin/bash
-```
-
-### Docker 镜像加速
-- 阿里云镜像加速配置：[阿里云镜像加速控制台](https://cr.console.aliyun.com/cn-beijing/instances/mirrors)
-
-### 清空日志
-```bash
-cd /var/lib/docker/containers/
-du -sh */ | sort -h
-truncate -s 0 a.log
-```
-
-## 系统信息
-
-### 查看 Linux 版本
-```bash
-cat /etc/os-release
-```
-
-## Java 后台进程管理
-
-### 在后台运行 JAR 文件
-```bash
-nohup java -jar /usr/local/src/bfj/msg-0.jar > /usr/local/src/bfj/info.log 2>&1 &
-```
-
-### 检查后台运行的进程
-```bash
-kill pid
-```
-
-### 停止后台进程
-```bash
-kill $(ps aux | grep 'msg.jar' | awk '{print $2}')
-```
-
-## URL 访问提示
-- 不能直接复制 URL 时，可以在前面加上 `https://r.jina.ai/`
-
-## Nginx 命令
-
-### 启动 Nginx
-```bash
-start nginx
-```
-
-### 停止 Nginx
-```bash
-nginx -s stop
-```
-
-### 重新加载 Nginx 配置
-```bash
-nginx -s reload
-```
+让我们携手同行，在生命的长河里，写下属于自己的诗篇。

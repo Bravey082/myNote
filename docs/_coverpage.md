@@ -1,15 +1,20 @@
 ![logo](/img/bobo.gif)
 
-# 我的博客 <small>分享我的生活、工作与成长</small>
+# 探索生活的诗意 <small style="font-size: 0.5em;">与你分享每一刻精彩</small>
 
-> 这是我的个人博客，记录工作中的心得体会、生活中的点滴故事，以及旅行中遇到的精彩瞬间。
+> 在这里，文字是思绪的溪流，代码是智慧的星辰
 
-- 内容涉及生活、工作、技术分享与旅行探险
-- 设计简洁，便于快速查看与阅读
-- 无需生成静态 HTML，实时更新和维护
+- 🌟 用心记录生活的美好瞬间
+- 💻 探索技术的无限可能
+- 📚 与你一起在知识的海洋遨游
 
-[Blog](https://bravey.us.kg)
-[Get Started](./README.md)
+<div class="hitokoto-container" style="margin: 2rem auto;">
+  <p id="hitokoto" style="font-family: 'Ma Shan Zheng', cursive; font-size: 1.8em;">
+    <span id="hitokoto_text" style="display: block; margin-bottom: 0.5em; background: linear-gradient(120deg, #2c8a4c 0%, #1e6b8f 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ 正在寻找一句美好的话语...</span>
+    <span id="hitokoto_info" style="font-size: 0.9em; color: #666; text-align: right; display: block;"></span>
+  </p>
+</div>
 
-<!-- background image -->
-![](/img/bg.jpg)
+[开始阅读](./README.md)
+
+![](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80)
