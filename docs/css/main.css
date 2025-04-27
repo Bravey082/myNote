@@ -1,7 +1,7 @@
 .mask {
-    background-color: rgba(231 231 231, 0.8) !important;
+    background-color: rgba(231, 231, 231, 0.8) !important;
     /* 设置半透明背景 */
-    opacity: 0.6 !important;
+    opacity: 0.5 !important;
     /* 透明度设置为 50% */
   }
 

@@ -3,15 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>我的博客，分享技术、生活、学习等方面的心得与经验。</title>
+  <title>晓阳的博客 - 技术、生活、学习心得分享</title>
   <link rel="icon" href="/img/long.png" sizes="32x32">
-  <meta name="description" content="晓阳的博客，分享技术、生活、学习等方面的心得与经验。">
+  <meta name="description" content="晓阳的专业博客，深度分享技术、生活、学习等多方面的实用心得与经验，助你探索更多精彩！">
   <meta name="author" content="晓阳">
   <meta name="robots" content="index, follow">
   <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/LIGMATV/docsify-theme-github/github.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap">
+  <link rel="stylesheet" href="https://fonts.font.im/css2?family=Ma+Shan+Zheng&display=swap">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -31,7 +31,8 @@
       plugins: [
         function(hook) {
           hook.ready(function() {
-            fetch('https://international.v1.hitokoto.cn/')
+            // 发起请求获取一言数据
+fetch('https://international.v1.hitokoto.cn/')
               .then(response => response.json())
               .then(data => {
                 document.getElementById('hitokoto_text').innerHTML = data.hitokoto;
@@ -55,7 +56,7 @@
     }
   </script>
   <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4" defer></script>
 </body>
 
 </html>
