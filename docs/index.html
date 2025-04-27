@@ -11,7 +11,6 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/LIGMATV/docsify-theme-github/github.css">
-  <link rel="stylesheet" href="https://fonts.font.im/css2?family=Ma+Shan+Zheng&display=swap">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -28,30 +27,7 @@
       sidebar: 'auto', // 默认会自动生成侧边栏内容
       themeColor: '#25798A',
       executeScript: true,
-      plugins: [
-        function(hook) {
-          hook.ready(function() {
-            // 发起请求获取一言数据
-fetch('https://international.v1.hitokoto.cn/')
-              .then(response => response.json())
-              .then(data => {
-                document.getElementById('hitokoto_text').innerHTML = data.hitokoto;
-                // 组装来源和作者信息
-                let info = '';
-                if (data.from) {
-                  info += `《${data.from}》`;
-                }
-                if (data.from_who) {
-                  info += ` - ${data.from_who}`;
-                }
-                document.getElementById('hitokoto_info').innerHTML = info;
-              })
-              .catch(error => {
-                console.error('获取一言失败：', error);
-              });
-          });
-        }
-      ]
+      plugins: []
     }
   </script>
   <!-- Docsify v4 -->

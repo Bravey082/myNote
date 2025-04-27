@@ -8,12 +8,7 @@
 - 💻 探索技术的无限可能
 - 📚 与你一起在知识的海洋遨游
 
-<div class="hitokoto-container" style="margin: 2rem auto;">
-  <p id="hitokoto" style="font-family: 'Ma Shan Zheng', cursive; font-size: 1.8em;">
-    <span id="hitokoto_text" style="display: block; margin-bottom: 0.5em; background: linear-gradient(120deg, #2c8a4c 0%, #1e6b8f 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ 正在寻找一句美好的话语...</span>
-    <span id="hitokoto_info" style="font-size: 0.9em; color: #666; text-align: right; display: block;"></span>
-  </p>
-</div>
+
 
 [开始阅读](./README.md)
 

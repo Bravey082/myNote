@@ -27,19 +27,3 @@
     background-color: rgba(0, 0, 0, 0.5);
     /* 悬停时的滑块颜色 */
   }
-
-  .hitokoto-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 15px;
-  }
-  
-  #hitokoto {
-    margin: 0;
-    line-height: 1.8;
-  }
-  
-  #hitokoto_info {
-    display: block;
-    margin-top: 10px;
-  }
